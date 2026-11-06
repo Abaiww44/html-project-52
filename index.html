@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="InShot_20261106_102107932.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal page of Abai — student from Bishkek.">
+  <title>Abai — Personal page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap">
+  <link rel="stylesheet" href="abai.css">
+  <script src="abai.js" defer></script>
+</head>
+<body>
+  <div class="page">
+
+    <div class="panel">
+      <header id="top">
+        <h2 class="tag">Personal page</h2>
+        <nav aria-label="Main navigation">
+          <a href="#about">About me</a>
+          <a href="#contacts">Contacts</a>
+          <a href="#hobbies">My hobbies</a>
+          <button id="theme-toggle" class="tag theme-btn" type="button" aria-label="Toggle theme">🌙 Dark</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hello">
+            <p>Hello, my names is</p>
+            <h1>Abai</h1>
+          </div>
+          <blockquote>
+            <p>“There's no sense in being precise when you don't even know what you're talking about.”</p>
+            <p><cite>von Neumann</cite></p>
+          </blockquote>
+        </section>
+        <hr class="bar">
+
+        <section class="section about" id="about">
+          <h2 class="tag">About me</h2>
+          <p class="box">
+            A student from Bishkek. I enjoy figuring out how things work—from a circuit board on a desk to a race car on the track. Here, I collect things that resonate with me and projects I've created myself.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="tag">And to get down to business:</h2>
+          <p class="box">
+            I'm studying computer systems and complexes—covering microcontrollers, electronics, and programming. Alongside my studies, I create short videos and projects for my portfolio. For me, it's not just about achieving a result; it's about understanding why it works.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="tag">Outside of work</h2>
+          <article class="box">
+            <h3>Heading into the mountains</h3>
+            <p>Trekking in Kyrgyzstan—mountain passes and routes, taken at a leisurely pace.<br>
+              Returning to places that are quiet, with views that stretch far into the distance.</p>
+          </article>
+          <article class="box">
+            <h3>Observing and analyzing</h3>
+            <p>Motorsport, aviation, machinery, cinema: I enjoy breaking down the details and the engineering.<br>
+              Discovering how things are made and why they are the way they are.</p>
+          </article>
+          <article class="box">
+            <h3>Soldering and assembling</h3>
+            <p>Selecting components, building circuits, and trying again when something doesn't work the first time.<br>
+              Sometimes, just playing around—to catch your breath.</p>
+          </article>
+        </section>
+
+        <section class="now">
+          <h2 class="tag">Now</h2>
+          <p class="box">Don't say what you're working on. No one should know your plans.</p>
+        </section>
+
+        <section class="section contacts" id="contacts">
+          <h2 class="tag">Contacts</h2>
+          <div class="box">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <span class="error-text" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <span class="error-text" id="email-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+                <span class="error-text" id="message-error"></span>
+              </div>
+              <button type="submit" class="tag btn-submit">Send message</button>
+              <p id="form-success" class="success-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <hr class="bar">
+
+      <footer>
+        <p class="tag">© 2026 Abai — Personal Page</p>
+      </footer>
+    </div>
+
+    <aside id="hobbies" aria-label="My hobbies">
+      <div class="aside-top">
+        <h2 class="label">hobbies</h2>
+        <a class="label" href="#top">close ×</a>
+      </div>
+
+      <a href="Aviation.html">
+        <figure>
+          <img src="aviation.jpg" alt="Passenger airliner on the apron" width="400" height="267">
+          <figcaption class="label">Aviation</figcaption>
+        </figure>
+      </a>
+
+      <a href="Motorsport.html">
+        <figure>
+          <img src="motorsport.jpg" alt="Formula 1 cars at the race start" width="400" height="267">
+          <figcaption class="label">Motorsport</figcaption>
+        </figure>
+      </a>
+
+      <a href="Technique.html">
+        <figure>
+          <img src="technique.jpg" alt="Smartphone cameras close-up" width="400" height="267">
+          <figcaption class="label">technique</figcaption>
+        </figure>
+      </a>
+    </aside>
+
+  </div>
+
+  <button id="back-to-top" class="tag back-to-top" type="button" aria-label="Back to top">↑ Top</button>
+</body>
+</html>
