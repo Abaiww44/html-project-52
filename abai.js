@@ -43,3 +43,9 @@ if (form) {
     }
   });
 }
+// 4. Закрытие блока хобби по нажатию Escape
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && location.hash === '#hobbies') {
+    location.hash = '#top';
+  }
+});
